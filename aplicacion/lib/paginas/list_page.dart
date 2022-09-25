@@ -10,7 +10,11 @@ class listPage extends StatelessWidget {
       ),
       body: Container(
         child: ListView(
-          children: <Widget>[ListTile(title: Text("Nota 1"), sdf)],
+          children: <Widget>[
+            ListTile(
+              title: Text("Nota 1"),
+            )
+          ],
         ),
       ),
     );
