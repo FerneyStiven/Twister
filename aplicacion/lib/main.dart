@@ -50,14 +50,37 @@ class _inicioState extends State<inicio> {
           ],
           
         )*/
+        // bottones
+
+        body: Center(
+          child: ElevatedButton(
+              child: Text("Hola"),
+              onPressed: () {
+                var t = DateTime.now();
+                print(t);
+              }),
+        )
+
         //column uno debajo del otro
         // row uno en frendte del otro
-
-        body: Row(
+        /* filas y columnas
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            Text("Hola 01"),
+            Container(
+              width: MediaQuery.of(context).size.width * 0.5,
+              child: Text(
+                "Hola 01",
+                textAlign: TextAlign.center,
+              ),
+            ),
+
             Text("Hola 02"),
           ],
-        ));
+        )
+        */
+        );
   }
 }
