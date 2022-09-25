@@ -36,12 +36,28 @@ class _inicioState extends State<inicio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("INICIO"),
-      ),
-      body: Center(
-        child: Text("Contenido"),
-      ),
-    );
+        appBar: AppBar(
+          title: Text("INICIO"),
+        ),
+        /*
+        body: ListView(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(50.0),
+              child: Image.network(
+                  "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1471d0c0-0472-4bdf-8e9d-cad89df6aa00/de8wsix-8d665cad-77da-4858-b06c-f21c11715a84.jpg/v1/fill/w_900,h_1274,q_75,strp/razor___genshin_impact_by_chibimaraworld_de8wsix-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE0NzFkMGMwLTA0NzItNGJkZi04ZTlkLWNhZDg5ZGY2YWEwMFwvZGU4d3NpeC04ZDY2NWNhZC03N2RhLTQ4NTgtYjA2Yy1mMjFjMTE3MTVhODQuanBnIiwiaGVpZ2h0IjoiPD0xMjc0Iiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8xNDcxZDBjMC0wNDcyLTRiZGYtOGU5ZC1jYWQ4OWRmNmFhMDBcL2NoaWJpbWFyYXdvcmxkLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.3T4CoQHYoj9F2xqI2F6XyWSB_wpY0ip-0NmuCXaZHoQ"),
+            ),
+          ],
+          
+        )*/
+        //column uno debajo del otro
+        // row uno en frendte del otro
+
+        body: Row(
+          children: <Widget>[
+            Text("Hola 01"),
+            Text("Hola 02"),
+          ],
+        ));
   }
 }
